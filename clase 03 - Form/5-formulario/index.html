@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            border: 3px dashed green;
+            padding: 10px;
+            margin: 10px;
+        }
+        label {
+            display: block;
+        }
+        #errores {
+      color: red;
+    }
+    </style>
+</head>
+<body>
+    <h1>Registro</h1>
+    <button>Test</button>
+
+    <ul id="errores"></ul>
+    <form name="registro" action="procesar.php">
+        <label>
+            Nombres
+        </label>
+        <label>
+            Email
+            <input type="text" name="correo">
+        </label>
+        <label>
+            Clave
+            <input type="text" name="clave">
+        </label>
+        <button>Guardar</button>
+    </form>
+
+    <!-- 
+    1- El usuario llena el formulario
+    2- El usuario pulsa el boton de envio
+    3- El boton de envio avisa al <form> que el usuario quiere enviar la info
+    4- el <form> va a buscar todos los controles que tengan el atributo name
+    5- el <form> crea el queryString: 
+        si se cargo:
+            Nombres: Axel Correa
+            Email: axel@email.com
+            Clave: 123
+        entonces, queryString es:
+        nombres=Axel%20Correa&correo=axel@email.com&clave=123
+    6- El <form> envia un REQUEST al server (entonces ocurre el evento submit):
+        si method es 'get':
+        /--------------------------------------------------------------------------------------
+        | GET procesar.php?nombres=Axel%20Correa&correo=axel@email.com&clave=123 HTTP/1.1
+        |accept: text/html
+        \-------------------------------------------------------------------------------------
+
+        si method es 'post':
+        /-------------------------------------------------------------
+        | POST procesar.php HTTP/1.1
+        | accept: text/html
+        | 
+        | nombres=Axel%20Correa&correo=axel@email.com&clave=123
+        \---------------------------------------------------------------
+    -->
+    <script src="app.js"></script>
+</body>
+</html>
