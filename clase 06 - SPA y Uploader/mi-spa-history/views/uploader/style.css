@@ -1,0 +1,33 @@
+#viewContent {
+  background: #eee;
+  border: none;
+}
+
+#uploader-dropzone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed green;
+  margin: 8px;
+  padding: 10px;
+  background: lightgreen;
+  border-radius: 3px;
+}
+
+#uploader-dropzone section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 6px;
+  padding: 8px;
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
