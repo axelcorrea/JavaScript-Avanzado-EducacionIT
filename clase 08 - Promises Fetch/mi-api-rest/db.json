@@ -1,0 +1,93 @@
+{
+  "users": [
+    {
+      "id": 30,
+      "name": "Julieta"
+    },
+    {
+      "id": 64,
+      "name": "Lucas"
+    },
+    {
+      "id": 83,
+      "name": "Tatiana"
+    },
+    {
+      "name": "Gogo",
+      "years": 30,
+      "study": true,
+      "id": 84
+    },
+    {
+      "name": "Fufu",
+      "years": 20,
+      "study": false,
+      "id": 85
+    }
+  ],
+  "articles": [
+    {
+      "id": 5,
+      "userId": 30,
+      "title": "Aprender React",
+      "text": "bla bla bla"
+    },
+    {
+      "id": 18,
+      "userId": 64,
+      "title": "Que es Angular",
+      "text": "bla bla bla"
+    },
+    {
+      "id": 23,
+      "userId": 64,
+      "title": "Firebase en un minuto",
+      "text": "bla bla bla"
+    },
+    {
+      "id": 49,
+      "userId": 83,
+      "title": "Web components",
+      "text": "bla bla bla"
+    }
+  ],
+  "comments": [
+    {
+      "id": 15,
+      "text": "React es genial!",
+      "artId": 5
+    },
+    {
+      "id": 32,
+      "text": "TypeScript \"lo hace\" el mejor",
+      "artId": 18
+    },
+    {
+      "id": 43,
+      "text": "Armé mi app en una semana",
+      "artId": 23
+    },
+    {
+      "id": 54,
+      "text": "Es magia pura!",
+      "artId": 23
+    },
+    {
+      "id": 95,
+      "text": "me gusta pero prefiero AWS",
+      "artId": 23
+    }
+  ],
+  "celulares": [
+    {
+      "id": 1,
+      "foto": "./photos/1.png",
+      "modelo": "iPhoneX"
+    },
+    {
+      "id": 2,
+      "foto": "./photos/2.png",
+      "modelo": "Galaxy"
+    }
+  ]
+}
